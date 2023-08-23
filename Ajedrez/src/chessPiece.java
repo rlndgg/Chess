@@ -4,4 +4,10 @@ public class chessPiece {
     public String getPieceType() {
         return pieceType;
     }
+
+    public getAvailableMoves(String currentTile, String pieceType) {
+
+    }
+
+
 }
