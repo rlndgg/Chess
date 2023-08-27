@@ -3,18 +3,36 @@ public class tiles {
     private int column;
     private chessPiece piece;
 
-    tiles (int row, int column){
+    public tiles (int row, int column, chessPiece piece){
+        this.row = row;
+        this.column = column;
+        this.piece = piece;
+    }
+    public tiles (int row, int column){
         this.row = row;
         this.column = column;
     }
-    private void setPiece (chessPiece piece) {
+
+    public void setPiece (chessPiece piece) {
         this.piece = piece;
     }
-    private chessPiece getPiece(){
+    public chessPiece getPiece(){
         return this.piece;
     }
 
+    public int getColumn() {
+        return column;
+    }
 
+    public int getRow() {
+        return row;
+    }
 
+    public void setColumn(int column) {
+        this.column = column;
+    }
 
+    public void setRow(int row) {
+        this.row = row;
+    }
 }
